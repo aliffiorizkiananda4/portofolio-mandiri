@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: 'E-Commerce App',
     description:
-      'Aplikasi toko online sederhana dengan fitur keranjang belanja, filter produk, dan halaman detail produk. Dibangun menggunakan React JS dan CSS murni.',
+      'Aplikasi toko online sederhana dengan fitur keranjang belanja, filter produk, dan halaman detail produk. Dibangun menggunakan Framework Laravel dan bosstrap.',
     tags: ['React JS', 'CSS', 'JavaScript'],
     icon: ShoppingCart,
     color: '#6c63ff',

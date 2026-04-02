@@ -14,7 +14,7 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-content fade-in-up">
-          <div className="hero-badge">👋 Halo, saya</div>
+          <div className="hero-badge"> Halo, saya</div>
           <h1 className="hero-title">
             Aliffio Rizki<br />
             <span className="hero-title-accent">Ananda</span>

@@ -1,18 +1,19 @@
+import { MapPin, School, BookOpen, Target } from 'lucide-react';
 import './About.css';
 
 const skills = [
   { name: 'HTML & CSS', level: 85 },
-  { name: 'JavaScript', level: 75 },
+  { name: 'JavaScript', level: 49 },
   { name: 'React JS', level: 70 },
   { name: 'UI/UX Design', level: 65 },
   { name: 'Git & GitHub', level: 60 },
 ];
 
 const info = [
-  { icon: '📍', label: 'Asal', value: 'Bogor, Jawa Barat' },
-  { icon: '🏫', label: 'Sekolah', value: 'SMK Wikrama Kota Bogor' },
-  { icon: '📚', label: 'Jurusan', value: 'Rekayasa Perangkat Lunak' },
-  { icon: '🎯', label: 'Fokus', value: 'Web Development' },
+  { icon: MapPin, label: 'Asal', value: 'Bogor, Jawa Barat' },
+  { icon: School, label: 'Sekolah', value: 'SMK Wikrama Kota Bogor' },
+  { icon: BookOpen, label: 'Jurusan', value: 'Rekayasa Perangkat Lunak' },
+  { icon: Target, label: 'Fokus', value: 'Web Development' },
 ];
 
 export default function About() {
@@ -34,17 +35,22 @@ export default function About() {
                 <span>AR</span>
               </div>
               <h3>Aliffio Rizki Ananda</h3>
-              <p className="about-role">Web Developer & Student</p>
+              <p className="about-role">Web Developer &amp; Student</p>
               <div className="about-info-list">
-                {info.map((item) => (
-                  <div key={item.label} className="about-info-item">
-                    <span className="info-icon">{item.icon}</span>
-                    <div>
-                      <span className="info-label">{item.label}</span>
-                      <span className="info-value">{item.value}</span>
+                {info.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div key={item.label} className="about-info-item">
+                      <span className="info-icon">
+                        <Icon size={18} color="var(--primary)" />
+                      </span>
+                      <div>
+                        <span className="info-label">{item.label}</span>
+                        <span className="info-value">{item.value}</span>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>

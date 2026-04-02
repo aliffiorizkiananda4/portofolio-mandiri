@@ -9,10 +9,11 @@
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(13, 13, 20, 0.92);
+  backdrop-filter: blur(12px);
   padding: 14px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--border);
 }
 
 .navbar-container {
@@ -24,9 +25,7 @@
   justify-content: space-between;
 }
 
-.navbar-logo {
-  cursor: pointer;
-}
+.navbar-logo { cursor: pointer; }
 
 .logo-text {
   font-size: 22px;
@@ -35,9 +34,7 @@
   letter-spacing: -0.5px;
 }
 
-.logo-dot {
-  color: var(--primary);
-}
+.logo-dot { color: var(--primary); }
 
 .navbar-links {
   display: flex;
@@ -61,10 +58,9 @@
 .nav-link:hover,
 .nav-link.active {
   color: var(--primary);
-  background: rgba(108, 99, 255, 0.08);
+  background: rgba(124, 111, 255, 0.1);
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -84,20 +80,12 @@
   transition: var(--transition);
 }
 
-.hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
+  .hamburger { display: flex; }
 
   .navbar-links {
     position: fixed;
@@ -105,17 +93,16 @@
     right: -100%;
     width: 240px;
     height: 100vh;
-    background: white;
+    background: #13131c;
     flex-direction: column;
     padding: 80px 24px 24px;
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid var(--border);
     transition: right 0.3s ease;
     gap: 4px;
   }
 
-  .navbar-links.open {
-    right: 0;
-  }
+  .navbar-links.open { right: 0; }
 
   .nav-link {
     width: 100%;
