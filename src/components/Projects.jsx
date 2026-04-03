@@ -1,4 +1,4 @@
-import { ShoppingCart, Cloud, CheckSquare, FileText } from 'lucide-react';
+import { ShoppingCart, Cloud } from 'lucide-react';
 import './Projects.css';
 
 const projects = [
@@ -6,11 +6,11 @@ const projects = [
     id: 1,
     title: 'E-Commerce App',
     description:
-      'Aplikasi toko online sederhana dengan fitur keranjang belanja, filter produk, dan halaman detail produk. Dibangun menggunakan Framework Laravel dan bosstrap.',
+      'Aplikasi toko online sederhana dengan fitur keranjang belanja, filter produk, dan halaman detail produk. Dibangun menggunakan Framework Laravel dan Bootstrap.',
     tags: ['React JS', 'CSS', 'JavaScript'],
     icon: ShoppingCart,
     color: '#6c63ff',
-    github: '#',
+    github: 'https://github.com/aliffiorizkiananda4',
     demo: '#',
   },
   {
@@ -21,29 +21,7 @@ const projects = [
     tags: ['JavaScript', 'API', 'HTML/CSS'],
     icon: Cloud,
     color: '#06b6d4',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 3,
-    title: 'Task Manager',
-    description:
-      'Aplikasi manajemen tugas dengan fitur tambah, edit, hapus, dan filter tugas berdasarkan status. Menggunakan localStorage untuk penyimpanan data.',
-    tags: ['React JS', 'LocalStorage', 'CSS'],
-    icon: CheckSquare,
-    color: '#10b981',
-    github: '#',
-    demo: '#',
-  },
-  {
-    id: 4,
-    title: 'Blog Personal',
-    description:
-      'Website blog personal dengan tampilan artikel, kategori, dan fitur pencarian. Didesain dengan tampilan minimalis dan mudah dibaca.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    icon: FileText,
-    color: '#f59e0b',
-    github: '#',
+    github: 'https://github.com/aliffiorizkiananda4',
     demo: '#',
   },
 ];

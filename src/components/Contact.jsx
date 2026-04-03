@@ -20,8 +20,8 @@ const contacts = [
   {
     icon: GitFork,
     label: 'GitHub',
-    value: 'github.com/aliffio',
-    href: 'https://github.com/aliffio',
+    value: 'github.com/aliffiorizkiananda4',
+    href: 'https://github.com/aliffiorizkiananda4',
     color: '#333',
   },
   {
