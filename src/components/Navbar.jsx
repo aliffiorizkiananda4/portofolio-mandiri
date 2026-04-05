@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleNav('Home')}>
           <img src={logoFerrari} alt="Ferrari" className="logo-img" />
-          <span className="logo-name">Aliffio</span>
+          <span className="logo-name">PIPDEV</span>
         </div>
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {navLinks.map((link) => (
