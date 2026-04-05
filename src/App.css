@@ -1,4 +1,2 @@
-/* Global resets & shared styles already in index.css */
-main {
-  width: 100%;
-}
+main { width: 100%; }
+.text-red { color: var(--red); }

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import logoFerrari from '../assets/kuda.png';
 import './Navbar.css';
 
-const navLinks = ['Home', 'About', 'Projects', 'Contact'];
+const navLinks = ['Home', 'About', 'Target', 'Projects', 'Tifosi', 'Contact'];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,38 +18,27 @@ export default function Navbar() {
   const handleNav = (link) => {
     setActive(link);
     setMenuOpen(false);
-    const el = document.getElementById(link.toLowerCase());
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleNav('Home')}>
-          <span className="logo-text">Aliffio<span className="logo-dot">.</span></span>
+          <img src={logoFerrari} alt="Ferrari" className="logo-img" />
+          <span className="logo-name">Aliffio</span>
         </div>
-
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {navLinks.map((link) => (
             <li key={link}>
-              <button
-                className={`nav-link ${active === link ? 'active' : ''}`}
-                onClick={() => handleNav(link)}
-              >
+              <button className={`nav-link ${active === link ? 'active' : ''}`} onClick={() => handleNav(link)}>
                 {link}
               </button>
             </li>
           ))}
         </ul>
-
-        <button
-          className={`hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+          <span /><span /><span />
         </button>
       </div>
     </nav>

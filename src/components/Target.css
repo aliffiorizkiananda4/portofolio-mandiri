@@ -1,0 +1,117 @@
+.target {
+  padding: 100px 32px;
+  background: var(--black);
+  border-top: 1px solid var(--border);
+}
+
+.target-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.target-heading {
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.target-sub {
+  max-width: 320px;
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.7;
+  padding-bottom: 8px;
+}
+
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.target-card {
+  background: var(--black-2);
+  padding: 40px 32px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.target-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.target-card:hover::before { transform: scaleX(1); }
+.target-card:hover { background: var(--black-3); }
+
+.target-number {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--border);
+  line-height: 1;
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+}
+
+.target-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.target-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.target-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.target-progress-bar {
+  flex: 1;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.target-progress-fill {
+  height: 100%;
+  background: var(--red);
+  border-radius: 2px;
+  transition: width 1s ease;
+}
+
+.target-progress-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--red);
+  min-width: 36px;
+}
+
+@media (max-width: 768px) {
+  .target-grid { grid-template-columns: 1fr; }
+  .target-header { flex-direction: column; align-items: flex-start; }
+}

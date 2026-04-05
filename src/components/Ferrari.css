@@ -1,0 +1,147 @@
+.ferrari {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 32px;
+  overflow: hidden;
+}
+
+.ferrari-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.ferrari-bg-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ferrari-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.82);
+}
+
+.ferrari-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.ferrari-eyebrow { color: rgba(255,255,255,0.5) !important; }
+.ferrari-eyebrow .eyebrow-line { background: var(--red) !important; }
+
+.ferrari-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.ferrari-heading {
+  font-size: clamp(56px, 8vw, 100px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+
+.ferrari-tagline {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.ferrari-desc {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.ferrari-desc strong { color: var(--white); }
+.ferrari-desc em { color: var(--red); font-style: normal; font-weight: 600; }
+
+.italian-flag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.flag-green { width: 20px; height: 14px; background: #009246; }
+.flag-white { width: 20px; height: 14px; background: #ffffff; }
+.flag-red   { width: 20px; height: 14px; background: #CE2B37; }
+
+.ferrari-since {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+
+.ferrari-values {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(255,255,255,0.05);
+}
+
+.ferrari-quote-block {
+  background: rgba(237,17,49,0.08);
+  border-left: 3px solid var(--red);
+  padding: 24px;
+  margin-bottom: 1px;
+}
+
+.ferrari-quote-text {
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.ferrari-quote-author {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.ferrari-value-card {
+  background: rgba(0,0,0,0.5);
+  padding: 28px 24px;
+  border-left: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.ferrari-value-card:hover { border-left-color: var(--red); background: rgba(237,17,49,0.08); }
+
+.ferrari-value-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 8px;
+}
+
+.ferrari-value-card p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .ferrari-main { grid-template-columns: 1fr; gap: 40px; }
+}
