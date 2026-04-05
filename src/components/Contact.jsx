@@ -3,10 +3,10 @@ import { Mail, MessageCircle, GitFork, ExternalLink, Send, CheckCircle } from 'l
 import './Contact.css';
 
 const contacts = [
-  { icon: Mail,          label: 'Email',     value: 'aliffio@email.com',          href: 'mailto:aliffio@email.com',          color: '#ea4335' },
-  { icon: MessageCircle, label: 'WhatsApp',  value: '+62 812-3456-7890',           href: 'https://wa.me/6281234567890',       color: '#25d366' },
+  { icon: Mail,          label: 'Email',     value: 'aliffioaliffio4@email.com',   href: 'mailto:aliffioaliffio4@email.com',   color: '#ea4335' },
+  { icon: MessageCircle, label: 'WhatsApp',  value: '+62 895-3881-46100',           href: 'https://wa.me/62895388146100',       color: '#25d366' },
   { icon: GitFork,       label: 'GitHub',    value: 'github.com/aliffiorizkiananda4', href: 'https://github.com/aliffiorizkiananda4', color: '#888' },
-  { icon: ExternalLink,  label: 'LinkedIn',  value: 'linkedin.com/in/aliffio',     href: 'https://linkedin.com/in/aliffio',   color: '#0077b5' },
+  { icon: ExternalLink,  label: 'LinkedIn',  value: 'aliffio-rizki-ananda',     href: 'https://www.linkedin.com/in/aliffio-rizki-ananda-b5532b340/',   color: '#0077b5' },
 ];
 
 export default function Contact() {
