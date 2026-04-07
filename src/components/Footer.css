@@ -50,3 +50,21 @@
   .footer-nav { justify-content: flex-start; }
   .footer-bottom-inner { flex-direction: column; gap: 8px; text-align: center; }
 }
+
+.ttt-link {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ttt-link:hover { color: var(--white); border-color: var(--white); }
