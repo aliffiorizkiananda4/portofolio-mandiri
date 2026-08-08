@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Ferrari from './components/Ferrari';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import TargetCursor from './components/TargetCursor';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       {loading && <Loader onDone={() => setLoading(false)} />}
+      <TargetCursor cursorColor="#ED1131" cursorColorOnTarget="#FFFFFF" spinDuration={2} />
       <Navbar />
       <main>
         <Hero />

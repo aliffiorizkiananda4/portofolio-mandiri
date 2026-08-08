@@ -38,7 +38,7 @@ export default function Contact() {
               {contacts.map((c) => {
                 const Icon = c.icon;
                 return (
-                  <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" className="contact-item">
+                  <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" className="contact-item cursor-target">
                     <div className="contact-icon-wrap" style={{ background: `${c.color}18`, color: c.color }}>
                       <Icon size={18} />
                     </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                   <label htmlFor="message">Pesan</label>
                   <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu..." value={form.message} onChange={handleChange} required />
                 </div>
-                <button type="submit" className="btn-red" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+                <button type="submit" className="btn-red cursor-target" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
                   <Send size={15} /> Kirim Pesan
                 </button>
               </form>
